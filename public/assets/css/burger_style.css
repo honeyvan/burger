@@ -1,0 +1,47 @@
+body {
+	background-color: beige;
+	font-family: arial;
+}
+
+#header, #add {
+	text-align: center;
+}
+
+button {
+	border: none;
+	background-color: #25c38e;
+	color: white;
+	padding: 5px;
+}
+
+h1 {
+	color: #b12411;
+}
+
+li {
+	background-color: lightgray;
+	margin: 5px 5px 5px 0;
+	list-style: none;
+	padding: 5px;
+}
+
+ul {
+	padding: 0;
+	width: 75%;
+}
+
+#left, #right {
+	width: 50%;
+}
+
+#right {
+	float: right;
+}
+
+#left {
+	margin-left: 60px;
+}
+
+#devoured, #devoured li {
+	margin-top: 0;
+}

@@ -1,0 +1,31 @@
+<div id="right">
+	<ul id="devoured">
+		{{#each burgers}}
+		  {{#if devoured}}
+
+		  <li>
+		  	{{burger_name}}
+		  </li>
+
+		  {{/if}}
+		{{/each}}
+	</ul>
+</div>
+
+<div id="left">
+	<ul id="undevoured">
+	  {{#each burgers}}
+	    {{#unless devoured}}
+
+	    	<li>
+		      {{burger_name}}
+		    </li>
+
+		      <form action="/update/{{ id }}" method="POST">
+		      	<button type="submit">Devour it!</button>
+		      </form>
+
+	    {{/unless}}
+	  {{/each}}
+	</ul>
+</div>
